@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  z-index: 999;
+}
+.logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight:bolder;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding: 0;
+    margin: 0;
+    /* Gradient from blue to green from top to bottom */
+    background: linear-gradient(to bottom, #ffffff, #00f2ff,#ffffff);
+}
+.last-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+  .line {
+    height: 1px;
+    background-color: #000000;
+    width: calc(85% - 40px);
+    align-items: center;
+  }
+  .last-text {
+    text-align: center;
+  }  
+  .last-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+  }
+  .section-rectangle {
+    padding: 10px; 
+    border-radius: 30px;
+    width: 90%; 
+    max-width: 1250px;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+    height: 500px; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    display:flex;
+  }
+  a{
+    text-decoration: none;
+  }
+  .left-content { /* Adjustable spacing between left and right */
+    text-align: center;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center; /* Center text on smaller screens */
+    max-width: 100%; /* Full width on smaller screens */
+  }
+  .left-content h2{
+    font-size: 50px;
+    font-weight: 550;
+    font-family: 'Poppins',sans-serif;
+  }
+  .left-content p{
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    width:1100px;
+  }
+  /* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .logo {
+      font-size: 24px;
+  }
+
+  .section-rectangle {
+      width: 95%;
+  }
+
+  .left-content h2 {
+      font-size: 24px;
+  }
+
+  .left-content p {
+      font-size: 14px;
+      width: 100%;
+  }
+
+  .line {
+      width: 95%;
+  }
+}

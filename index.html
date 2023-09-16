@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<html style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/STYLES.css">
+    <title>Collators | Heart Disease Predicting Tool</title>
+    <link rel="icon" href="static/Untitled design.png" type="image/x-icon">
+    <link rel="shortcut icon" href="static/Untitled design.png" type="image/x-icon">
+    <script src="button.js"></script>
+    <style>
+        /* Define scrollbar track and thumb styles */
+        ::-webkit-scrollbar {
+          width: 10px;
+          background-color: #ffffff;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background-color: rgb(118, 118, 118);
+          border-radius: 10px;
+        }
+        
+        /* Define scrollbar hover effect */
+        ::-webkit-scrollbar-thumb:hover {
+          background-color: rgb(44, 44, 44);
+        }
+        
+        /* Define scrollbar corner style */
+        ::-webkit-scrollbar-corner {
+          background-color: #F5F5F5;
+        }
+        </style>
+</head>
+<body>
+    <header><a href="/">
+        <div class="logo">Collators</div></a>
+    </header><br><br><br><br><br>
+    <div class="section-rectangle">
+        <section class="custom-section">
+            <div class="left-content">
+                <h2>Collators: Heart Disease Predicting Tool</h2><br><br>
+                <p>Collator's Heart Disease Predicting Tool is an innovative and user-friendly application designed to assess an individual's risk of developing heart disease. Using advanced algorithms and personal health data, it provides valuable insights and recommendations to promote heart health and prevent cardiovascular issues.</p>
+            </div>
+            <div class="right-image">
+                <img src="static/20944264.jpg" alt="Image Description">
+            </div>
+        </section>
+    </div><br><br><br><br><br>
+    <section id="predform">
+    <div class="container">
+        <h2>Enter The Details to Check!</h2><br>
+        <a href="/new" target="_blank">Please refer here about parameters</a>
+        <form method="POST" action="/pred">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dropdown1">Age</label>
+                    <input type="number" name ="a" placeholder="Enter patient age" required>
+                </div>
+                <div class="form-group">
+                    <label type="dropdown2">Gender</label>
+                    <select id="dropdown2" name="b">
+                        <option value="option1">Select</option>
+                        <option value=1>Male</option>
+                        <option value=0>Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dropdown2">Chest Pain Type</label>
+                    <select id="dropdown2" name="c">
+                        <option value="option1">Select</option>
+                        <option value=0>Typical Angina</option>
+                        <option value=1>Atypical Angina</option>
+                        <option value=2>Non-Anginal Pain</option>
+                        <option value=3>Asymtomatic</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                <label for="dropdown2">Resting BP(in mm Hg)</label>
+                    <input type="number" name="d" placeholder="Enter resting bp" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                <label for="dropdown2">Cholesterol</label>
+                    <input type="number" name="e" placeholder="Enter Cholesterol rating" required>
+                </div>
+                <div class="form-group">
+                <label for="dropdown2">Fasting Blood Sugar >120mg/dl</label>
+                    <select name="f">                   
+                        <option value="option1">Select<option>
+                        <option value=1>Yes</option>
+                        <option value=0>No</option>
+                    </select>
+                </div>        
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dropdown2">Resting ECG Results</label>
+                    <select id="dropdown2" name="g">
+                        <option value="option1">Select</option>
+                        <option value=0>Nothing to note</option>
+                        <option value=1>ST-T Wave Abonormality</option>
+                        <option value=2>Possible/Definite Left Ventricular Hypertrophy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown2">Max Heart Rate achieved</label>
+                    <input type="number" name="h" placeholder="Enter thalach rating" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dropdown2">Exercise Angina</label>
+                    <select name="i">                   
+                        <option value="option1">Select<option>
+                        <option value=1>Yes</option>
+                        <option value=0>No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown2">Old Peak</label>
+                    <input type="number" name="j" step="0.01" placeholder="Enter old peak rating" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dropdown2">Slope</label>
+                    <select id="dropdown2" name="k">
+                        <option value="option1">Select</option>
+                        <option value=0>Unslopping: Better Heart Rate</option>
+                        <option value=1>Flatslopping: Minimal Change</option>
+                        <option value=3>Downslopping: Signs of Unhealthy Heart</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown2">CA</label>
+                    <select id="dropdown2" name="l">
+                        <option value="option1">Select</option>
+                        <option value=0>0</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dropdown2">Thalium Stress</label>
+                    <select id="dropdown2" name="m">
+                        <option value="option1">Select</option>
+                        <option value=3>Normal</option>
+                        <option value=6>Fixed Defect</option>
+                        <option value=7>Reversable Defect</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="output-submit">Submit</button>        
+        </form>
+    </div>
+    </section>
+    <br><br><br><br><br>
+    <hr class="line"></hr>  
+      <div class="last-section">
+        <div class="rectangle"><br>
+        <div class="last-text">
+          <p>© 2023 Collators. All rights reserved</p>
+        </div>
+      </div>
+      </div>
+      <div class="floating-button" id="scrollButton">
+        <a href="#predform">Check The Tool  ↓</a>
+    </div>
+</body>
+</html>
